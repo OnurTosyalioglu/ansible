@@ -1,0 +1,14 @@
+useradd -d /home/ansible -m ansible
+passwd ansible
+passwd -x -1 ansible 
+
+mkdir .ssh
+chown ansible:ansible .ssh
+chmod 700 .ssh
+touch .ssh/authorized_keys
+
+echo $KEY >> authorized_keys
+chown ansible:ansible .ssh/authorized_keys
+chmod 700 .ssh/authorized_keys
+
+eval $(ssh-agent)
