@@ -1,0 +1,2 @@
+eval $(ssh-agent)
+ssh -i $KEY $USER@$HOST
