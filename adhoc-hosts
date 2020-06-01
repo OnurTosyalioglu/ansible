@@ -1,0 +1,1 @@
+ansible dblb -m ping -i ./hosts
