@@ -1,13 +1,13 @@
 [dblb]
-10.10.10.10
+dblb ansible_host=10.10.10.10 ansible_ssh_private_key_file=./keys/db ansible_user=ansible
 
 [db]
-10.10.10.11
-10.10.10.12
+db1 ansible_host=10.10.10.11 ansible_ssh_private_key_file=./keys/db ansible_user=ansible
+db2 ansible_host=10.10.10.12 ansible_ssh_private_key_file=./keys/db ansible_user=ansible
 
 [weblb]
-11.11.11.10
+weblb ansible_host=10.10.10.10 ansible_ssh_private_key_file=./keys/web ansible_user=ansible
 
 [web]
-11.11.11.11
-11.11.11.12
+web1 ansible_host=10.10.10.11 ansible_ssh_private_key_file=./keys/web ansible_user=ansible
+web2 ansible_host=10.10.10.12 ansible_ssh_private_key_file=./keys/web ansible_user=ansible
